@@ -1,0 +1,137 @@
+/* @keyframes searchInput{
+    from{
+        padding: 5px;
+        border-radius: 30%;
+    }
+    to{
+        padding: 8px;
+        border-radius: 12px;
+    }
+} */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 300ms ease;
+}
+.logo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+.logo>img{
+    width: 3rem;
+    height: 3rem;
+}
+.logo>span>span{
+    color: var(--pink);
+}
+
+/* ====menu==== */
+.menu{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    font-size: 14px;
+    border-radius: 0.7rem;
+}
+.menu-item:hover{
+    cursor: pointer;
+
+}
+.active{
+    background:var(--activeItem) ;
+    margin-left: 0;
+}
+.active::before{
+    content: '';
+    width: 8px;
+    height: 100%;
+    background: var(--pink);
+    margin-right: calc(1rem - 8px);
+}
+.menu .menu-item:last-child{
+    position: absolute;
+    bottom: 1.3rem;
+    width: 100%;
+}
+.bars{
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+   .menu-item>span{
+       display: none;
+   }
+   .logo{
+       display: none;
+   }
+   .menu .menu-item:last-child{
+       bottom: 0.5rem;
+   }
+}
+@media screen and (max-width:768px){
+    .sidebar{
+        position: fixed;
+        z-index: 9;
+        width: 60%;
+        background: #ffe0e0;
+        height: 100%;
+        padding-right: 1rem;
+        /* overflow-y: scroll; */
+    }
+    .menu-item>span{
+        display: block;
+    }
+    .logo{
+        display: flex;
+    }
+    .menu .menu-item:last-child{
+        position: relative;
+        margin-top: 2rem;
+    }
+    .bars{
+        display: flex;
+        position: fixed;
+        top: 2rem;
+        z-index: 10;
+        background-color: #ffe0e0;
+        padding:10px;
+        border: 0.2px solid rgb(221, 219, 219);
+        border-radius: 10px;
+        /* animation: searchInput 1s infinite alternate; */
+        /* margin-left: 5px; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
