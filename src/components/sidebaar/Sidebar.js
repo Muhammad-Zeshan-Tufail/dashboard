@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import "./sidebar.css"
 import logo from "../../imgs/logo.png"
-import { SidebarData } from '../../Data/Data'
+import { SidebarData } from '../../Data/SidebarData'
 import {UilSignOutAlt,UilBars} from "@iconscout/react-unicons" 
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-// ,UilEstate,UilChart,UilPackage,UilUsersAlt,UilClipboardAlt
 
 const Sidebar = () => {
 
@@ -17,6 +16,7 @@ const Sidebar = () => {
         true:{left:"0"},
         false:{left:"-65%"}
     }
+
   return (
     <>
         <div className="bars" style={expanded?{left:"50%"}:{left:"5%"}}

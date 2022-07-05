@@ -1,0 +1,179 @@
+{
+  "users": [
+    {
+      "product_name": "Sofa",
+      "brand": "Kashmiri Wood",
+      "color": "brown",
+      "quantity": "45",
+      "isDis": false,
+      "id": 1
+    },
+    {
+      "product_name": "Ali",
+      "brand": "Hamza",
+      "color": "23-12-1998",
+      "quantity": "33434",
+      "isDis": false,
+      "id": 2
+    },
+    {
+      "product_name": "Sofa",
+      "brand": "Kashmiri Wood",
+      "color": "brown",
+      "quantity": "45",
+      "isDis": false,
+      "id": 3
+    },
+    {
+      "product_name": "Glass",
+      "brand": "cs",
+      "color": "Black",
+      "quantity": "23",
+      "isDis": false,
+      "id": 5
+    },
+    {
+      "product_name": "Mobile",
+      "brand": "Samsung",
+      "color": "Blue",
+      "quantity": "5",
+      "isDis": false,
+      "id": 6
+    },
+    {
+      "product_name": "Mobile",
+      "brand": "test brand",
+      "color": "test color",
+      "quantity": "634",
+      "isDis": false,
+      "id": 7
+    },
+    {
+      "product_name": "Bed",
+      "brand": "Kashmiri Wood",
+      "color": "Black",
+      "quantity": "5",
+      "isDis": false,
+      "id": 8
+    },
+    {
+      "product_name": "test product",
+      "brand": "test brand",
+      "color": "test color",
+      "quantity": "98",
+      "isDis": false,
+      "id": 9
+    },
+    {
+      "product_name": "test product",
+      "brand": "test brand",
+      "color": "test color",
+      "quantity": "2",
+      "isDis": false,
+      "id": 10
+    },
+    {
+      "product_name": "test product",
+      "brand": "test brand",
+      "color": "test color",
+      "quantity": "2",
+      "isDis": false,
+      "id": 11
+    }
+  ],
+  "customers": [
+    {
+      "first_name": "Jammal",
+      "last_name": "Bhatti",
+      "date_of_birth": "1997-10-08",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 3
+    },
+    {
+      "first_name": "Zakir",
+      "last_name": "Tahir",
+      "date_of_birth": "1996-12-07",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 4
+    },
+    {
+      "first_name": "Mustehsan",
+      "last_name": "Zubair",
+      "date_of_birth": "1999-08-19",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 6
+    },
+    {
+      "first_name": "Hamid",
+      "last_name": "Majeed",
+      "date_of_birth": "2000-01-23",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 7
+    },
+    {
+      "first_name": "Zeshan",
+      "last_name": "Tufail",
+      "date_of_birth": "1998-11-09",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 8
+    },
+    {
+      "first_name": "Mehran",
+      "last_name": "Mehmood",
+      "date_of_birth": "1990-12-23",
+      "country": "Pakistan",
+      "isDis": false,
+      "id": 9
+    }
+  ],
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Ali",
+      "address": "ABC",
+      "details": "Any Detail",
+      "isDis": false
+    },
+    {
+      "name": "Asad",
+      "address": "khuiratta",
+      "details": "dksjdksj jskdsk jskdjsk sddskj",
+      "price": "",
+      "isDis": false,
+      "id": 2
+    },
+    {
+      "name": "Hamid",
+      "address": "rwp",
+      "details": "dksjdksj jskdsk jskdjsk sddskj",
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "address": "Test",
+      "details": "Test",
+      "id": 4
+    },
+    {
+      "name": "Jamal Bhatti",
+      "address": "Pindora",
+      "details": "Rawalpindi",
+      "price": "",
+      "isDis": false,
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "address": "abc",
+      "details": "lorem ipsum dollar!",
+      "price": "",
+      "isDis": false,
+      "id": 6
+    }
+  ]
+}

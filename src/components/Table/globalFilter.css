@@ -14,11 +14,36 @@
 
 /* ==============STYLE-FOR-SEARCH-FORM============= */
 .search-form{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 3px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    /* width: 75px; */
+    height: 35px;
+    margin-left: 1rem;
+}
+.btn button{
+    font-size: 16px;
+    /* height: 100%; */
+    width: 100%;
+    border: 1px solid gainsboro;
+    outline: none;
+    background: transparent;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+    background: #fcd4cc;
+}
+.btn button:hover{
+    letter-spacing: 1.5px;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: transparent;
 }
 .input{
     width: 300px;
@@ -26,7 +51,7 @@
     border: 1px solid var(--gray);
     border-radius: .3rem;
     padding: 0.1rem 0.5rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
 .input input{
     height: 100%;
@@ -35,6 +60,10 @@
     border: none;
     outline: none;
     font-size: 14px;
+    transition: 300ms ease-in-out;
+}
+.input input:hover{
+    letter-spacing: 1.5px;
 }
 
 /* ===========FOR-TABLETS============ */
@@ -52,23 +81,26 @@
 }
 
 
-/* ============FOR-PHONES============= */
+/* ============FOR-SMALL-DEVICES============= */
 
 @media screen and (max-width:768px) {
     .search-form{
         position: fixed;
-        top: 35px;
+        top: 2.5rem;
         right: 31px;
         margin-top: 0;
     }
+    
     .input{
-        width: 30%;
-        margin-right: 2rem;
+        width: 50%;
+        margin-right: 0;
         transition: 300ms ease;
+        height: 35px;
         
     }
     .input:hover{
-        width: 45%;
-        height: 45px;
+        width: 60%;
+        height: 40px;
+
     }
     }

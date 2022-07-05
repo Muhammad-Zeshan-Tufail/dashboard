@@ -1,0 +1,31 @@
+.container{
+    position: relative;
+    top: 2rem;
+}
+.col-6{
+    padding: 1rem;
+    max-width: 350px;
+}
+
+@media screen and (max-width: 1080px){
+    .container{
+        overflow-y: scroll;
+    }
+    .col-6{
+        margin-bottom: 3rem !important;
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        position: absolute;
+        overflow-y: scroll;
+    }
+    .col-6{
+        background-color: #fff;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+}

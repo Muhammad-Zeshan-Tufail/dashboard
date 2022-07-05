@@ -4,14 +4,14 @@ import {
   useGlobalFilter,
   usePagination,
 } from "react-table/dist/react-table.development";
-import MOCK_DATA from "./MOCK_DATA.json";
+import OrderTableData from './OrderTableData.json'
 import { COLUMNS } from "./columns";
-import "./BasicTable.css";
-import GlobalFilter from "./GlobalFilter";
+import '../BasicTable.css'
+import GlobalFilter from '../GlobalFilter'
 
-const BasicTable = () => {
+const OrderTable = () => {
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+  const data = useMemo(() => OrderTableData, []);
 
   const tableInstance = useTable(
     {
@@ -98,4 +98,4 @@ const BasicTable = () => {
   );
 };
 
-export default BasicTable;
+export default OrderTable;

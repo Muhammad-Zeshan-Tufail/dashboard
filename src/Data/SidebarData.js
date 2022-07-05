@@ -8,6 +8,7 @@ import {
     // UilSignOutAlt
     // UilMoneyWithdrawal,
     // UilUsdSquare,
+    UilStore
 
 }
 from "@iconscout/react-unicons"
@@ -26,6 +27,11 @@ export const SidebarData=[
         icon:UilUsersAlt,
         heading:"Customers",
         path:"/customers"
+    },
+    {
+        icon:UilStore,
+        heading:"Vendor",
+        path:"/vendor"
     },
     {
         icon:UilPackage,

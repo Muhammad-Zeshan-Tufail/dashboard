@@ -1,10 +1,10 @@
 import React from 'react'
-import BasicTable from '../components/Table/BasicTable'
+import OrderTable from '../components/Table/orderTable/OrderTable'
 
 const Order = () => {
   return (
     <div>
-      <BasicTable/>
+      <OrderTable/>
     </div>
   )
 }

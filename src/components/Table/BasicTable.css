@@ -2,7 +2,11 @@
     margin: 0px;
     padding: 0;
 }
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
  /* .heading {
     display: flex;
@@ -21,7 +25,13 @@ h1 {
 .table-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .outer-wrapper {
@@ -51,13 +61,12 @@ h1 {
     
     margin: 15px;
     padding-bottom: 20px;
-    
+    box-shadow: 2px 4px 10px rgb(151, 148, 148);
 } 
 
 
 table {
     min-width: max-content;
-    
     border-collapse: separate;
     border-spacing: 0px;    
     
@@ -75,7 +84,7 @@ table th{
     font-size: 18px;
     outline: 0.7px solid black;
     border: 1.5px solid black;
-
+    z-index: 1;
 } 
 
 
@@ -96,6 +105,11 @@ table td {
     padding-left: 20px;
     
 }
+
+table button{
+    border: none;
+    font-size: 24px;
+}
 .btn-group{
     display:flex;
     justify-content:center;
@@ -110,13 +124,25 @@ table td {
 }
 
 /* ==========FOR-SMALL-DEVICES=========== */
+@media screen and (max-width:1080px){
+    .table-container{
+        justify-content: flex-start;
+    }
+}
+
+
+/* ==========FOR-SMALL-DEVICES=========== */
 
 @media screen and (max-width:768px) {
     .table-container {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         position: fixed;
-        width: 96%;
+        width: 97%;
     } 
+    .table-wrapper{
+        margin-top: 5rem;
+    }
 }
