@@ -1,3 +1,4 @@
+/*==============ANIMATION-FOR-SEARCH============= */
 @keyframes searchInput{
     from{
         width: 0;
@@ -10,17 +11,14 @@
         font-size: 18px;
     }
 }
-.main-dash{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 2rem;
-    overflow-y: scroll;
-}
+
+/* ==============STYLE-FOR-SEARCH-FORM============= */
 .search-form{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 3px;
+    margin-top: 1rem;
 }
 .input{
     width: 300px;
@@ -39,6 +37,8 @@
     font-size: 14px;
 }
 
+/* ===========FOR-TABLETS============ */
+
 @media screen and (max-width:1080px) {
     .input input:focus{
         letter-spacing: 1.4px;
@@ -50,27 +50,25 @@
         animation: searchInput 700ms 1 alternate;
     }
 }
+
+
+/* ============FOR-PHONES============= */
+
 @media screen and (max-width:768px) {
-.main-dash{
-    margin-top: 5rem;
-}
-.search-form{
-    position: fixed;
-    top: 35px;
-    right: 31px;
-}
-.input{
-    width: 30%;
-    margin-right: 2rem;
-    transition: 300ms ease;
-    
-}
-.input:hover{
-    width: 45%;
-    height: 45px;
-    /* transform: translateX(40px 0); */
-    /* transform: rotate(360deg); */
-}
-
-}
-
+    .search-form{
+        position: fixed;
+        top: 35px;
+        right: 31px;
+        margin-top: 0;
+    }
+    .input{
+        width: 30%;
+        margin-right: 2rem;
+        transition: 300ms ease;
+        
+    }
+    .input:hover{
+        width: 45%;
+        height: 45px;
+    }
+    }

@@ -4,6 +4,9 @@ import logo from "../../imgs/logo.png"
 import { SidebarData } from '../../Data/Data'
 import {UilSignOutAlt,UilBars} from "@iconscout/react-unicons" 
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+
+// ,UilEstate,UilChart,UilPackage,UilUsersAlt,UilClipboardAlt
 
 const Sidebar = () => {
 
@@ -31,10 +34,12 @@ const Sidebar = () => {
         <div className="menu">
             {SidebarData.map((item,index)=>{
                 return(
-                    <div className={selected===index?' menu-item active' : 'menu-item'} key={index} onClick={()=>setSelected(index)}>
-                        <item.icon/>
-                        <span>{item.heading}</span>
-                    </div>
+                    <Link to={item.path} key={index}>
+                        <div className={selected===index?' menu-item active' : 'menu-item'}  onClick={()=>setSelected(index)}>
+                                <item.icon/>
+                                <span>{item.heading}</span>
+                        </div>
+                    </Link>
                 )
             })}
             <div className="menu-item">

@@ -40,6 +40,10 @@
     flex-direction: column;
     gap: 2rem;
 }
+.menu a{
+    text-decoration: none;
+    color: black;
+}
 .menu-item{
     display: flex;
     align-items: center;
@@ -66,11 +70,11 @@
     background: var(--pink);
     margin-right: calc(1rem - 8px);
 }
-.menu .menu-item:last-child{
+/* .menu .menu-item:last-child{
     position: absolute;
     bottom: 1.3rem;
     width: 100%;
-}
+} */
 .bars{
     display: none;
 }
@@ -82,9 +86,9 @@
    .logo{
        display: none;
    }
-   .menu .menu-item:last-child{
+   /* .menu .menu-item:last-child{
        bottom: 0.5rem;
-   }
+   } */
 }
 @media screen and (max-width:768px){
     .sidebar{
@@ -102,10 +106,10 @@
     .logo{
         display: flex;
     }
-    .menu .menu-item:last-child{
+    /* .menu .menu-item:last-child{
         position: relative;
         margin-top: 2rem;
-    }
+    } */
     .bars{
         display: flex;
         position: fixed;
